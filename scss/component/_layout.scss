@@ -1,0 +1,11 @@
+.content-section {
+  display: flex;
+
+  .section-left {
+    flex: 0 0 60%;
+  }
+
+  .section-right {
+    flex: 0 0 40%;
+  }
+}

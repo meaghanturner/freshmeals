@@ -1,0 +1,22 @@
+{
+  "name": "freshmeals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/dist/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meaghanturner/freshmeals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meaghanturner/freshmeals/issues"
+  },
+  "homepage": "https://github.com/meaghanturner/freshmeals#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
