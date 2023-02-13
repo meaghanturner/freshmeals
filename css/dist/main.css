@@ -371,7 +371,7 @@ input {
   min-height: 100vh; }
 
 .get-started-page .background-image {
-  background-image: url("/images/hero-image.jpg");
+  background-image: url("../../images/hero-image.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
