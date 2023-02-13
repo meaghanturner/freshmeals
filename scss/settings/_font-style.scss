@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: $brand-primary;
+  color: $brand-primary-dark;
   text-decoration: underline;
   margin-bottom: px-to-rem(16);
 
@@ -22,7 +22,7 @@ p {
   margin-bottom: px-to-rem(10);
 }
 
-h2 {
+h1 {
   font-family: $primary;
   color: $brand-primary-dark;
   font-size: px-to-rem(40);

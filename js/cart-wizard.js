@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    var mealTitle;
-    var imgSource;
-
     $.getJSON("data/product-data.json", function (data) {
         var template = $('#meal-selection').html();
         var html = Mustache.render(template, data);
@@ -9,19 +6,17 @@ $(document).ready(function () {
 
         for (var i = 0; i < data.products.length; i++) {
             var product = data.products[i];
-            mealTitle = product.title;
-            imgSource = product.image.src;
         }
     });
 
     // Cart
     var cartCount = $('.cart-wizard-main .cart-wizard-item').length;
     var checkoutBtn = $('#submit').prop("disabled", true).addClass("disabled");
-    var mealsSelected = $('.meals-selected');
-    mealsSelected.text(0 + ' ' + 'of' + ' ' + 12 + ' meals selected');
-
-
-    // Add QTY Button
+    var mealSelected = $('.meals-selected');
+    let current = 0;
+    let maxAllowed = 12;
+    mealSelected.text(`${current} of ${maxAllowed} meals selected`);
+    
     $(document).on('click', '.add-qty', function () {
         if (cartCount >= 12) {
             alert("You have reached the maximum limit of 12 items.");
@@ -30,18 +25,8 @@ $(document).ready(function () {
 
         var product = $(this).closest('.product-card-item');
         var title = product.find('h3').text();
-
         var img = product.find('img').attr('src');
         var mealId = title.toLowerCase().replace(/ /g, "-");
-
-        // Check if product is already in the cart
-        if ($('.cart-wizard-item[data-product-id="' + mealId + '"]').length) {
-            // Product is already in the cart, show an error message or take other action as desired
-            alert("Product already in the cart");
-            return;
-        }
-
-        product.find('h3').attr("data-meal-id", mealId);
 
         // Create a new HTML element to represent the product in the cart
         var cartProduct = $('<li class="cart-wizard-item">');
@@ -63,17 +48,16 @@ $(document).ready(function () {
         var remainingItems = $('.remaining-items');
         if (cartCount <= 11) {
             remainingItems.text('Add ' + (12 - cartCount) + ' more meal' + (cartCount === 11 ? '' : 's') + '!');
-            mealsSelected.text(cartCount + ' ' + 'of' + ' ' + 12 + ' meals selected');
+            mealSelected.text(cartCount + ' ' + 'of' + ' ' + 12 + ' meals selected');
         } else if (cartCount === 12) {
             remainingItems.text("All meals selected!");
-            mealsSelected.text(12 + ' ' + 'of' + ' ' + 12 + ' meals selected')
+            mealSelected.text(12 + ' ' + 'of' + ' ' + 12 + ' meals selected')
             checkoutBtn.prop("disabled", false).removeClass("disabled");
         }
     });
 
     $(document).on('click', '.remove-qty', function () {
-
-        var productId = $(this).closest('.product-card-item').find('id');
+        var productId = $(this).closest('.product-card-item').attr('data-meal-id');
         var cartItem = $('.cart-wizard-main .cart-item-title:contains("' + productId + '")').closest('.cart-item');
         cartItem.remove();
     })
@@ -89,16 +73,17 @@ $(document).ready(function () {
     var cart = $(".cart-wizard-main");
     var removeButton = $(".remove-all");
     var toggleRemoveButton = function () {
-        removeButton.prop("disabled", !cart.children().length).toggleClass('disabled', !cart.children().length);
+        removeButton.prop("disabled", !cart.children().length).toggleClass('disabled', !cart.children().length > 0);
     };
 
     removeButton.click(function () {
-        if (!cart.children().length) {
+        if (!cart.children().length > 0) {
             return;
         }
 
         if (confirm("Are you sure you want to delete all meals?")) {
             cart.empty();
+            cartCount.text(parseInt(cartCount.text()) - cart.children().length);
             toggleRemoveButton();
         }
     });
@@ -112,4 +97,3 @@ $(document).ready(function () {
 // TODO: add/remove qty selectors add to cart section on each product item
 // TODO: The item should only be added once to the cart, shouldn't be added again if it exists already. The quantity value should update instead.
 // TODO: If they click on minus and its on 1 qty it should remove the item
-

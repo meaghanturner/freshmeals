@@ -1,18 +1,21 @@
-@mixin button($bg-color: $brand-primary, $bg-color-hover: $brand-primary-dark, $color: $white) {
+@mixin button($bg-color: $brand-primary-dark, $bg-color-hover: $white, $color: $white, $color-hover: $brand-primary-dark) {
   background-color: $bg-color;
   border-radius: px-to-rem(30);
   color: $color;
   font-weight: $bold;
-  font-size: px-to-rem(14);
+  font-size: px-to-rem(16);
   padding: px-to-rem(16) px-to-rem(20);
   margin-bottom: px-to-rem(16);
   transition: all .3s;
   cursor: pointer;
   width: 100%;
+  border: 1px solid $bg-color;
 
   &:hover,
   &:focus {
     background-color: $bg-color-hover;
+    border: 1px solid $bg-color;
+    color: $color-hover;
   }
 }
 
@@ -27,6 +30,11 @@
   padding: 0;
   text-decoration: underline;
   text-align: left;
+
+  &:hover,
+  &:focus {
+    border: 0;
+  }
 }
 
 .button {
@@ -35,6 +43,7 @@
 
 .disabled {
   background-color: $grey;
+  border-color: $white;
   color: $white;
   cursor: not-allowed;
   transition: none;
@@ -42,6 +51,7 @@
   &:hover,
   &:focus {
     background-color: $grey;
+    border-color: $white;
     color: $white;
   }
 }

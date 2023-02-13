@@ -14,9 +14,10 @@
     flex-direction: column;
     justify-content: center;
     padding: px-to-rem(60) px-to-rem(80) px-to-rem(80);
+    max-width: 560px;
   }
 
-  h2 {
+  .page-title {
     margin-bottom: px-to-rem(20);
     text-align: center;
   }
