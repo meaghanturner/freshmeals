@@ -45,7 +45,16 @@ $(document).ready(function () {
 
         // Create a new HTML element to represent the product in the cart
         var cartProduct = $('<li class="cart-wizard-item">');
-        cartProduct.append('<img src="' + img + '" />', '<h3 class="title" data-meal-id="' + mealId + '">' + title + '</h3>', '<button class="remove remove-item">Remove</button>');
+        cartProduct.append('' +
+            '<img src="' + img + '" />',
+            '<h3 class="title" data-meal-id="' + mealId + '">' + title + '</h3>',
+            '<button class="remove remove-item">Remove</button>', ' <div className="add-meal">' +
+            '<div className="quantity-selectors">' +
+            '<button className="remove-qty button">-</button>' +
+            '<p className="current-qty">1</p>' +
+            '<button className="add-qty">+</button>' +
+            '</div>' +
+            '</div>');
 
         // Append the new element to the cart container
         $('.cart-wizard-main').append(cartProduct);
