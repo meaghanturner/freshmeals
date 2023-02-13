@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fresh Meal Plan: Healthy Prepared Meals Delivered to Your Door</title>
+    <meta name="description"
+          content="Looking for healthy vegan and vegetarian meal delivery in your area? Fresh meals offers prepared, plant based meals delivered to your door. Arrive frozen ready to heat and eat. Check availability here to see if we deliver to your zip code.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/dist/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mustache@4.0.1/mustache.min.js"></script>
+    <script src="js/cart-wizard.js"></script>
+</head>
+<body class="meal-selection-page">
+<h1 class="page-title screen-reader invisible">Meal Selection</h1>
+<main class="main-container">
+    <div class="section-left product-list">
+        <script id="meal-selection" type="x-tmpl-mustache">
+          {{#products}}
+          <div class="product-card-item">
+            <img src="{{image.src}}" alt=""/>
+            <div class="inner-content">
+                <h3 class="product-title" data-meal-id="">{{title}}</h3>
+                <a href="#" class="product-info">More Information</a>
+                <div class="add-meal">
+                    <div class="quantity-selectors" style="display:none;">
+                            <button class="button remove-qty"> — </button>
+                            <p class="current-qty">1</p>
+                            <button class="button add-qty"> + </button>
+                    </div>
+                    <button type="submit" class="button add-qty primary">Add to Meals</button>
+                </div>
+            </div>
+            </div>
+          {{/products}}
+        </script>
+    </div>
+    <div class="section-right cart-wizard-container">
+        <div class="cart-wizard-inner">
+            <div class="cart-wizard-header">
+                <h2>My Meals</h2>
+                <p class="meals-selected"></p>
+                <button class="remove remove-all">Remove all Meals</button>
+            </div>
+            <ul class="cart-wizard-main"></ul>
+            <div class="cart-wizard-action">
+                <p class="remaining-items">Add 12 more meals!</p>
+                <button id="submit" type="submit" class="button" value="Continue to Checkout">Continue to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+</body>

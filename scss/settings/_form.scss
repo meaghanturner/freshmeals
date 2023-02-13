@@ -1,0 +1,25 @@
+label,
+input {
+    display: block;
+}
+
+label {
+    margin-bottom: px-to-rem(5);
+    padding: 0 px-to-rem(12);
+}
+
+input {
+    width: 100%;
+    border: $thin-grey;
+    border-radius: px-to-rem(30);
+    min-height: px-to-rem(41);
+    padding: px-to-rem(12) px-to-rem(12);
+}
+
+.form-field {
+    padding-bottom: px-to-rem(22);
+}
+
+.privacy-information {
+    font-size: px-to-rem(12);
+}

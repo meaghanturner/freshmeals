@@ -1,11 +1,15 @@
-.content-section {
-  display: flex;
+.main-container {
+    display: flex;
 
-  .section-left {
-    flex: 0 0 60%;
-  }
+    .section-left {
+        flex: 0 0 60%;
+    }
 
-  .section-right {
-    flex: 0 0 40%;
-  }
+    .section-right {
+        flex: 0 0 40%;
+    }
+
+    img {
+        max-width: 100%;
+    }
 }

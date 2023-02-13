@@ -1,9 +1,7 @@
-$primary: #519864;
-$primary-dark: #1f5940;
+$brand-primary-dark: #1f5940;
 $secondary-dark: #101f2d;
 
 $yellow-light: #f3f0e9;
-$yellow-light-alt: #fbfaf4;
 
 $grey: #868686;
 $grey-lightest: #e2dfd7;
@@ -14,3 +12,7 @@ $black: #000000;
 $white: #FFFFFF;
 
 $ui-borders: $grey-lightest;
+$typography: $secondary-dark;
+
+$red: #ff4b4a;
+$error: $red;
