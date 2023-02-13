@@ -16,6 +16,7 @@
     <script src="js/cart-wizard.js"></script>
 </head>
 <body class="meal-selection-page">
+<h1 class="page-title screen-reader invisible">Meal Selection</h1>
 <main class="main-container">
     <div class="section-left product-list">
         <script id="meal-selection" type="x-tmpl-mustache">
@@ -26,12 +27,12 @@
                 <h3 class="product-title" data-meal-id="">{{title}}</h3>
                 <a href="#" class="product-info">More Information</a>
                 <div class="add-meal">
-                    <div class="quantity-selectors">
-                            <button class="remove-qty button">-</button>
+                    <div class="quantity-selectors" style="display:none;">
+                            <button class="button remove-qty"> — </button>
                             <p class="current-qty">1</p>
-                            <button class="add-qty">+</button>
+                            <button class="button add-qty"> + </button>
                     </div>
-                    <button type="submit" class="button add-qty">Add to Meals</button>
+                    <button type="submit" class="button add-qty primary">Add to Meals</button>
                 </div>
             </div>
             </div>

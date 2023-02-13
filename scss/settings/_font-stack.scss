@@ -1,12 +1,13 @@
 @font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/poppins/poppins-medium-webfont.woff') format('woff', 'woff2'),
-  url('/fonts/poppins/poppins-black-webfont.woff') format('woff', 'woff2'),
-  url('/fonts/poppins/poppins-bold-webfont.woff') format('woff', 'woff2');
+    font-family: 'Poppins';
+    src: url('/fonts/poppins/poppins-medium-webfont.woff') format('woff', 'woff2'),
+    url('/fonts/poppins/poppins-black-webfont.woff') format('woff', 'woff2'),
+    url('/fonts/poppins/poppins-bold-webfont.woff') format('woff', 'woff2');
 }
 
 // Font Family
 $primary: 'Poppins', sans-serif;
+$secondary: sans-serif;
 
 // Font Weight
 $light: 300;

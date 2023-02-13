@@ -1,35 +1,35 @@
 .get-started-page {
-  .main-container {
-    min-height: 100vh;
-  }
+    .main-container {
+        min-height: 100vh;
+    }
 
-  .background-image {
-    background-image: url("/images/get-started-hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+    .background-image {
+        background-image: url("/images/hero-image.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-  .content-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: px-to-rem(60) px-to-rem(80) px-to-rem(80);
-    max-width: 560px;
-  }
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: px-to-rem(60) px-to-rem(80) px-to-rem(80);
+        max-width: 560px;
+    }
 
-  .page-title {
-    margin-bottom: px-to-rem(20);
-    text-align: center;
-  }
+    .page-title {
+        margin-bottom: px-to-rem(20);
+        text-align: center;
+    }
 
-  .subheading-text {
-    margin: 0 auto px-to-rem(30);
-    text-align: center;
-  }
+    .subheading-text {
+        margin: 0 auto px-to-rem(30);
+        text-align: center;
+    }
 
-  img {
-    height: 100%;
-  }
+    img {
+        height: 100%;
+    }
 }
 
 

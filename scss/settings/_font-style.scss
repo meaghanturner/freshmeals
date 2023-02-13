@@ -1,54 +1,53 @@
 // Typography
 body {
-  font-family: $primary;
-  font-weight: $regular;
-  font-size: px-to-rem(16);
-  color: $typography;
+    font-family: $primary;
+    font-weight: $regular;
+    font-size: px-to-rem(16);
+    color: $typography;
 }
 
 a {
-  color: $brand-primary-dark;
-  text-decoration: underline;
-  margin-bottom: px-to-rem(16);
+    color: $brand-primary-dark;
+    text-decoration: underline;
+    margin-bottom: px-to-rem(16);
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
 }
 
 p {
-  font-weight: $regular;
-  margin-bottom: px-to-rem(10);
+    font-weight: $regular;
+    margin-bottom: px-to-rem(10);
 }
 
 h1 {
-  font-family: $primary;
-  color: $brand-primary-dark;
-  font-size: px-to-rem(40);
-  font-weight: $bold;
-  margin-bottom: px-to-rem(10);
+    font-family: $primary;
+    color: $brand-primary-dark;
+    font-size: px-to-rem(40);
+    font-weight: $bold;
+    margin-bottom: px-to-rem(10);
 }
 
 .subheading-text {
-  margin-bottom: px-to-rem(20);
+    margin-bottom: px-to-rem(20);
 }
 
 // Form
 label {
-  font-size: px-to-rem(12);
-  font-weight: $bold;
+    font-size: px-to-rem(12);
+    font-weight: $bold;
 
-  &.error {
-    color: $error;
-    font-weight: $regular;
-    padding-top: px-to-rem(8);
-  }
+    &.error {
+        color: $error;
+        font-weight: $regular;
+        padding-top: px-to-rem(8);
+    }
 }
 
 .screen-reader {
-  overflow: hidden;
-  height: 0;
-  width: 0;
+    overflow: hidden;
+    height: 0;
+    width: 0;
 }
-

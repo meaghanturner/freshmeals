@@ -1,5 +1,5 @@
 $browser-context: 16;
 
 @function px-to-rem($pixels, $context: $browser-context) {
-  @return #{$pixels/$context}rem;
+    @return #{$pixels/$context}rem;
 }
