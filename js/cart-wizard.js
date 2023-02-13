@@ -43,7 +43,7 @@ $(document).ready(function () {
                 '<div class="quantity-selectors">' +
                 '<button class="remove-qty button">—</button>' +
                 '<p class="current-qty">1</p>' +
-                '<button class="add-qty">+</button>',
+                '<button class="add-qty-cart">+</button>',
                 '<button class="remove remove-item">Remove</button>');
             // Append the new element to the cart container
             $('.cart-wizard-main').append(cartProduct);

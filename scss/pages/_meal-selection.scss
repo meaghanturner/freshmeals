@@ -97,10 +97,11 @@
 }
 
 .remove-item {
+
     text-align: right;
-    font-size: px-to-rem(12);
 }
 
-.add-qty {
+.add-qty,
+.add-qty-cart {
     @include button();
 }
