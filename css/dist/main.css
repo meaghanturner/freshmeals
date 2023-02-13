@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+button {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden,
+[hidden] {
+  display: none !important; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */ }
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table; }
+
+.clearfix::after {
+  clear: both; }
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]::after {
+    content: " (" attr(href) ")"; }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: ""; }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("/fonts/poppins/poppins-medium-webfont.woff") format("woff", "woff2"), url("/fonts/poppins/poppins-black-webfont.woff") format("woff", "woff2"), url("/fonts/poppins/poppins-bold-webfont.woff") format("woff", "woff2"); }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #101f2d; }
+
+a {
+  color: #1f5940;
+  text-decoration: underline;
+  margin-bottom: 1rem; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+p {
+  font-weight: 400;
+  margin-bottom: 0.625rem; }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #1f5940;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem; }
+
+.subheading-text {
+  margin-bottom: 1.25rem; }
+
+label {
+  font-size: 0.75rem;
+  font-weight: 700; }
+  label.error {
+    color: #ff4b4a;
+    font-weight: 400;
+    padding-top: 0.5rem; }
+
+.screen-reader {
+  overflow: hidden;
+  height: 0;
+  width: 0; }
+
+.button {
+  background-color: #1f5940;
+  border-radius: 1.875rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  transition: all .3s;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #1f5940; }
+  .button:hover, .button:focus {
+    background-color: #FFFFFF;
+    border: 1px solid #1f5940;
+    color: #1f5940; }
+
+.disabled {
+  background-color: #868686;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  cursor: not-allowed;
+  transition: none; }
+  .disabled:hover, .disabled:focus {
+    background-color: #868686;
+    border-color: #FFFFFF;
+    color: #FFFFFF; }
+
+label,
+input {
+  display: block; }
+
+label {
+  margin-bottom: 0.3125rem;
+  padding: 0 0.75rem; }
+
+input {
+  width: 100%;
+  border: 1px solid #e2dfd7;
+  border-radius: 1.875rem;
+  min-height: 2.5625rem;
+  padding: 0.75rem 0.75rem; }
+
+.form-field {
+  padding-bottom: 1.375rem; }
+
+.privacy-information {
+  font-size: 0.75rem; }
+
+.main-container {
+  display: flex; }
+  .main-container .section-left {
+    flex: 0 0 60%; }
+  .main-container .section-right {
+    flex: 0 0 40%; }
+  .main-container img {
+    max-width: 100%; }
+
+.cart-wizard-container {
+  display: block;
+  position: sticky;
+  top: 40px;
+  height: 100%; }
+
+.cart-wizard-inner {
+  background-color: #FFFFFF;
+  border-radius: 0.875rem;
+  padding: 2.5rem 0 1.25rem;
+  display: flex;
+  flex-direction: column; }
+
+.cart-wizard-header {
+  border-bottom: 1px solid #e2dfd7;
+  text-align: center; }
+
+.cart-wizard-main {
+  flex: 1 0 auto;
+  margin-bottom: 1rem;
+  min-height: 300px; }
+
+.cart-wizard-item {
+  margin-left: 0;
+  list-style: none;
+  padding: 1rem 0.625rem;
+  border-bottom: 1px solid #e2dfd7; }
+  .cart-wizard-item img {
+    max-width: 80px; }
+  .cart-wizard-item .title {
+    flex: 1 1 auto;
+    font-size: 1rem;
+    padding-left: 1rem; }
+  .cart-wizard-item .current-qty {
+    color: #1f5940;
+    margin-bottom: 0;
+    padding: 0 0.625rem; }
+  .cart-wizard-item .quantity-selectors {
+    display: flex;
+    align-items: center; }
+    .cart-wizard-item .quantity-selectors .add-qty-cart,
+    .cart-wizard-item .quantity-selectors .remove-qty {
+      background: #FFFFFF;
+      border: 0;
+      color: #1f5940;
+      font-family: sans-serif;
+      font-weight: 400;
+      margin-bottom: 0;
+      padding: 0; }
+
+.cart-wizard-item-inner {
+  display: flex;
+  align-items: center; }
+
+.remaining-items {
+  color: #1f5940;
+  font-weight: 700;
+  text-align: center; }
+
+.cart-wizard-action {
+  margin: 0 1.25rem; }
+
+.remove {
+  background-color: #FFFFFF;
+  border-radius: 1.875rem;
+  color: #1f5940;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  transition: all .3s;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  border: 2px solid #1f5940;
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+  text-align: left; }
+  .remove:hover, .remove:focus {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #1f5940; }
+  .remove:hover, .remove:focus {
+    border: 0; }
+
+.remove-all {
+  text-align: center; }
+  .remove-all.disabled {
+    color: #868686;
+    cursor: not-allowed;
+    font-weight: 400; }
+
+.get-started-page .main-container {
+  min-height: 100vh; }
+
+.get-started-page .background-image {
+  background-image: url("/images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.get-started-page .content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.75rem 5rem 5rem;
+  max-width: 560px; }
+
+.get-started-page .page-title {
+  margin-bottom: 1.25rem;
+  text-align: center; }
+
+.get-started-page .subheading-text {
+  margin: 0 auto 1.875rem;
+  text-align: center; }
+
+.get-started-page img {
+  height: 100%; }
+
+.meal-selection-page {
+  background-color: #f3f0e9; }
+  .meal-selection-page .main-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2.5rem 5rem; }
+  .meal-selection-page .section-left {
+    flex: 0 0 75%; }
+  .meal-selection-page .section-right {
+    flex: 0 0 25%; }
+  .meal-selection-page .subheading-text {
+    font-weight: 700; }
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap; }
+  .product-list .product-card-item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    background-color: #FFFFFF;
+    border-radius: 0.875rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 8px;
+    margin-right: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding: 1.125rem; }
+    .product-list .product-card-item img {
+      background: #f3f0e9;
+      padding: 1em;
+      border-radius: 0.875rem; }
+  .product-list .inner-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0.875rem 1.125rem; }
+    .product-list .inner-content .product-title {
+      text-align: center;
+      margin-bottom: 0.75rem;
+      flex: 1 0 auto; }
+    .product-list .inner-content .product-info {
+      font-size: 0.75rem;
+      text-align: center; }
+    .product-list .inner-content .button {
+      margin-bottom: 0; }
+    .product-list .inner-content .quantity-selectors {
+      display: flex;
+      justify-content: center;
+      border: 1px solid #1f5940;
+      border-radius: 1.875rem;
+      padding: 1rem 1.25rem;
+      color: #1f5940; }
+      .product-list .inner-content .quantity-selectors .quantity {
+        max-width: 100px;
+        text-align: center; }
+      .product-list .inner-content .quantity-selectors .current-qty {
+        color: #1f5940;
+        margin-bottom: 0;
+        padding: 0 1.25rem; }
+      .product-list .inner-content .quantity-selectors .add-qty,
+      .product-list .inner-content .quantity-selectors .remove-qty {
+        background: #FFFFFF;
+        border: 0;
+        color: #1f5940;
+        font-family: sans-serif;
+        font-weight: 400;
+        margin-bottom: 0;
+        padding: 0; }
+
+.remove-item {
+  text-align: right; }
+
+.add-qty,
+.add-qty-cart {
+  background-color: #1f5940;
+  border-radius: 1.875rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  transition: all .3s;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #1f5940; }
+  .add-qty:hover, .add-qty:focus,
+  .add-qty-cart:hover,
+  .add-qty-cart:focus {
+    background-color: #FFFFFF;
+    border: 1px solid #1f5940;
+    color: #1f5940; }
