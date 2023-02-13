@@ -1,8 +1,8 @@
 {
-  "name": "freshmeals",
+  "name": "freshmealscart",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "sass": "node-sass -w scss/ -o css/dist/ --recursive"
   },
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/meaghanturner/freshmeals#readme",
   "dependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^8.0.0"
   }
 }

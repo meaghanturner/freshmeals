@@ -1,0 +1,599 @@
+{
+  "products": [
+    {
+      "id": 5982004773030,
+      "title": "Bison Burger Club",
+      "body_html": "\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan data-mce-fragment=\"1\"\u003e604 Calories, 56g Protein, 41g Carbs, 24g Fats\u003c\/span\u003e\u003cbr\u003e",
+      "vendor": "FreshMeal_Interview_Org",
+      "product_type": "",
+      "created_at": "2020-12-01T21:13:24-08:00",
+      "handle": "bison-burger-club",
+      "updated_at": "2020-12-21T01:06:37-08:00",
+      "published_at": "2020-12-01T21:13:24-08:00",
+      "template_suffix": "",
+      "status": "active",
+      "published_scope": "web",
+      "tags": "",
+      "admin_graphql_api_id": "gid:\/\/shopify\/Product\/5982004773030",
+      "variants": [
+        {
+          "id": 37208918130854,
+          "product_id": 5982004773030,
+          "title": "Default Title",
+          "price": "10.00",
+          "sku": "",
+          "position": 1,
+          "inventory_policy": "deny",
+          "compare_at_price": null,
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "created_at": "2020-12-01T21:13:24-08:00",
+          "updated_at": "2020-12-01T21:13:39-08:00",
+          "taxable": true,
+          "barcode": "",
+          "grams": 0,
+          "image_id": null,
+          "weight": 0.0,
+          "weight_unit": "kg",
+          "inventory_item_id": 39115398938790,
+          "inventory_quantity": 1000,
+          "old_inventory_quantity": 1000,
+          "requires_shipping": true,
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductVariant\/37208918130854"
+        }
+      ],
+      "options": [
+        {
+          "id": 7614060855462,
+          "product_id": 5982004773030,
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": 21801447882918,
+          "product_id": 5982004773030,
+          "position": 1,
+          "created_at": "2020-12-01T21:13:37-08:00",
+          "updated_at": "2020-12-01T21:13:37-08:00",
+          "alt": null,
+          "width": 497,
+          "height": 497,
+          "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/M11339.png?v=1606886017",
+          "variant_ids": [],
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801447882918"
+        }
+      ],
+      "image": {
+        "id": 21801447882918,
+        "product_id": 5982004773030,
+        "position": 1,
+        "created_at": "2020-12-01T21:13:37-08:00",
+        "updated_at": "2020-12-01T21:13:37-08:00",
+        "alt": null,
+        "width": 497,
+        "height": 497,
+        "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/M11339.png?v=1606886017",
+        "variant_ids": [],
+        "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801447882918"
+      }
+    },
+    {
+      "id": 5982005231782,
+      "title": "Cheese Blintzes with Wild Blueberry Sauce",
+      "body_html": "\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan data-mce-fragment=\"1\"\u003e346 Calories, 16g Protein, 39g Carbs, 14g Fats\u003c\/span\u003e\u003cbr\u003e",
+      "vendor": "FreshMeal_Interview_Org",
+      "product_type": "",
+      "created_at": "2020-12-01T21:13:55-08:00",
+      "handle": "cheese-blintzes-with-wild-blueberry-sauce",
+      "updated_at": "2020-12-21T01:06:37-08:00",
+      "published_at": "2020-12-01T21:13:55-08:00",
+      "template_suffix": "",
+      "status": "active",
+      "published_scope": "web",
+      "tags": "",
+      "admin_graphql_api_id": "gid:\/\/shopify\/Product\/5982005231782",
+      "variants": [
+        {
+          "id": 37208920359078,
+          "product_id": 5982005231782,
+          "title": "Default Title",
+          "price": "10.00",
+          "sku": "",
+          "position": 1,
+          "inventory_policy": "deny",
+          "compare_at_price": null,
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "created_at": "2020-12-01T21:13:55-08:00",
+          "updated_at": "2020-12-01T21:14:07-08:00",
+          "taxable": true,
+          "barcode": "",
+          "grams": 0,
+          "image_id": null,
+          "weight": 0.0,
+          "weight_unit": "kg",
+          "inventory_item_id": 39115401167014,
+          "inventory_quantity": 1000,
+          "old_inventory_quantity": 1000,
+          "requires_shipping": true,
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductVariant\/37208920359078"
+        }
+      ],
+      "options": [
+        {
+          "id": 7614061510822,
+          "product_id": 5982005231782,
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": 21801452011686,
+          "product_id": 5982005231782,
+          "position": 1,
+          "created_at": "2020-12-01T21:14:11-08:00",
+          "updated_at": "2020-12-01T21:14:11-08:00",
+          "alt": null,
+          "width": 497,
+          "height": 497,
+          "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/B691.png?v=1606886051",
+          "variant_ids": [],
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801452011686"
+        }
+      ],
+      "image": {
+        "id": 21801452011686,
+        "product_id": 5982005231782,
+        "position": 1,
+        "created_at": "2020-12-01T21:14:11-08:00",
+        "updated_at": "2020-12-01T21:14:11-08:00",
+        "alt": null,
+        "width": 497,
+        "height": 497,
+        "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/B691.png?v=1606886051",
+        "variant_ids": [],
+        "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801452011686"
+      }
+    },
+    {
+      "id": 5982003757222,
+      "title": "Chicken Bruscetta",
+      "body_html": "\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan data-mce-fragment=\"1\"\u003e496 Calories, 44g Protein, 53g Carbs, 12g Fats\u003c\/span\u003e\u003cbr\u003e",
+      "vendor": "FreshMeal_Interview_Org",
+      "product_type": "",
+      "created_at": "2020-12-01T21:12:59-08:00",
+      "handle": "chicken-bruscetta",
+      "updated_at": "2020-12-21T01:06:36-08:00",
+      "published_at": "2020-12-01T21:12:59-08:00",
+      "template_suffix": "",
+      "status": "active",
+      "published_scope": "web",
+      "tags": "",
+      "admin_graphql_api_id": "gid:\/\/shopify\/Product\/5982003757222",
+      "variants": [
+        {
+          "id": 37208916721830,
+          "product_id": 5982003757222,
+          "title": "Default Title",
+          "price": "10.00",
+          "sku": "",
+          "position": 1,
+          "inventory_policy": "deny",
+          "compare_at_price": null,
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "created_at": "2020-12-01T21:12:59-08:00",
+          "updated_at": "2020-12-01T21:13:13-08:00",
+          "taxable": true,
+          "barcode": "",
+          "grams": 0,
+          "image_id": null,
+          "weight": 0.0,
+          "weight_unit": "kg",
+          "inventory_item_id": 39115397529766,
+          "inventory_quantity": 1000,
+          "old_inventory_quantity": 1000,
+          "requires_shipping": true,
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductVariant\/37208916721830"
+        }
+      ],
+      "options": [
+        {
+          "id": 7614059643046,
+          "product_id": 5982003757222,
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": 21801445490854,
+          "product_id": 5982003757222,
+          "position": 1,
+          "created_at": "2020-12-01T21:13:14-08:00",
+          "updated_at": "2020-12-01T21:13:14-08:00",
+          "alt": null,
+          "width": 497,
+          "height": 497,
+          "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/M722.png?v=1606885994",
+          "variant_ids": [],
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801445490854"
+        }
+      ],
+      "image": {
+        "id": 21801445490854,
+        "product_id": 5982003757222,
+        "position": 1,
+        "created_at": "2020-12-01T21:13:14-08:00",
+        "updated_at": "2020-12-01T21:13:14-08:00",
+        "alt": null,
+        "width": 497,
+        "height": 497,
+        "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/M722.png?v=1606885994",
+        "variant_ids": [],
+        "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801445490854"
+      }
+    },
+    {
+      "id": 5982003364006,
+      "title": "Chicken Parmesan",
+      "body_html": "\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan data-mce-fragment=\"1\"\u003e492 Calories, 43g Protein, 62g Carbs, 8g Fats\u003c\/span\u003e\u003cbr\u003e",
+      "vendor": "FreshMeal_Interview_Org",
+      "product_type": "",
+      "created_at": "2020-12-01T21:12:34-08:00",
+      "handle": "chicken-parmesan",
+      "updated_at": "2020-12-21T01:06:36-08:00",
+      "published_at": "2020-12-01T21:12:34-08:00",
+      "template_suffix": "",
+      "status": "active",
+      "published_scope": "web",
+      "tags": "",
+      "admin_graphql_api_id": "gid:\/\/shopify\/Product\/5982003364006",
+      "variants": [
+        {
+          "id": 37208915574950,
+          "product_id": 5982003364006,
+          "title": "Default Title",
+          "price": "10.00",
+          "sku": "",
+          "position": 1,
+          "inventory_policy": "deny",
+          "compare_at_price": null,
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "created_at": "2020-12-01T21:12:34-08:00",
+          "updated_at": "2020-12-01T21:12:51-08:00",
+          "taxable": true,
+          "barcode": "",
+          "grams": 0,
+          "image_id": null,
+          "weight": 0.0,
+          "weight_unit": "kg",
+          "inventory_item_id": 39115396382886,
+          "inventory_quantity": 1000,
+          "old_inventory_quantity": 1000,
+          "requires_shipping": true,
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductVariant\/37208915574950"
+        }
+      ],
+      "options": [
+        {
+          "id": 7614058987686,
+          "product_id": 5982003364006,
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": 21801442312358,
+          "product_id": 5982003364006,
+          "position": 1,
+          "created_at": "2020-12-01T21:12:51-08:00",
+          "updated_at": "2020-12-01T21:12:51-08:00",
+          "alt": null,
+          "width": 497,
+          "height": 497,
+          "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/M8231.png?v=1606885971",
+          "variant_ids": [],
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801442312358"
+        }
+      ],
+      "image": {
+        "id": 21801442312358,
+        "product_id": 5982003364006,
+        "position": 1,
+        "created_at": "2020-12-01T21:12:51-08:00",
+        "updated_at": "2020-12-01T21:12:51-08:00",
+        "alt": null,
+        "width": 497,
+        "height": 497,
+        "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/M8231.png?v=1606885971",
+        "variant_ids": [],
+        "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801442312358"
+      }
+    },
+    {
+      "id": 5982003167398,
+      "title": "Grilled Tailgate Chicken",
+      "body_html": "\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan data-mce-fragment=\"1\"\u003e443 Calories, 41g Protein, 54g Carbs, 7g Fats\u003c\/span\u003e\u003cbr\u003e",
+      "vendor": "FreshMeal_Interview_Org",
+      "product_type": "",
+      "created_at": "2020-12-01T21:12:06-08:00",
+      "handle": "grilled-tailgate-chicken",
+      "updated_at": "2020-12-21T01:06:36-08:00",
+      "published_at": "2020-12-01T21:12:06-08:00",
+      "template_suffix": "",
+      "status": "active",
+      "published_scope": "web",
+      "tags": "",
+      "admin_graphql_api_id": "gid:\/\/shopify\/Product\/5982003167398",
+      "variants": [
+        {
+          "id": 37208912363686,
+          "product_id": 5982003167398,
+          "title": "Default Title",
+          "price": "10.00",
+          "sku": "",
+          "position": 1,
+          "inventory_policy": "deny",
+          "compare_at_price": null,
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "created_at": "2020-12-01T21:12:07-08:00",
+          "updated_at": "2020-12-01T21:12:26-08:00",
+          "taxable": true,
+          "barcode": "",
+          "grams": 0,
+          "image_id": null,
+          "weight": 0.0,
+          "weight_unit": "kg",
+          "inventory_item_id": 39115393171622,
+          "inventory_quantity": 1000,
+          "old_inventory_quantity": 1000,
+          "requires_shipping": true,
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductVariant\/37208912363686"
+        }
+      ],
+      "options": [
+        {
+          "id": 7614058660006,
+          "product_id": 5982003167398,
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": 21801439166630,
+          "product_id": 5982003167398,
+          "position": 1,
+          "created_at": "2020-12-01T21:12:20-08:00",
+          "updated_at": "2020-12-01T21:12:20-08:00",
+          "alt": null,
+          "width": 497,
+          "height": 497,
+          "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/M8475.png?v=1606885940",
+          "variant_ids": [],
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801439166630"
+        }
+      ],
+      "image": {
+        "id": 21801439166630,
+        "product_id": 5982003167398,
+        "position": 1,
+        "created_at": "2020-12-01T21:12:20-08:00",
+        "updated_at": "2020-12-01T21:12:20-08:00",
+        "alt": null,
+        "width": 497,
+        "height": 497,
+        "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/M8475.png?v=1606885940",
+        "variant_ids": [],
+        "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801439166630"
+      }
+    },
+    {
+      "id": 5982005821606,
+      "title": "Red Velvet Pancakes",
+      "body_html": "\u003cmeta charset=\"utf-8\"\u003e306 Calories, 19g Protein, 35g Carbs, 10g Fats\u003cbr\u003e",
+      "vendor": "FreshMeal_Interview_Org",
+      "product_type": "",
+      "created_at": "2020-12-01T21:14:23-08:00",
+      "handle": "306-calories-19g-protein-35g-carbs-10g-fats",
+      "updated_at": "2020-12-21T01:06:37-08:00",
+      "published_at": "2020-12-01T21:14:23-08:00",
+      "template_suffix": "",
+      "status": "active",
+      "published_scope": "web",
+      "tags": "",
+      "admin_graphql_api_id": "gid:\/\/shopify\/Product\/5982005821606",
+      "variants": [
+        {
+          "id": 37208921342118,
+          "product_id": 5982005821606,
+          "title": "Default Title",
+          "price": "10.00",
+          "sku": "",
+          "position": 1,
+          "inventory_policy": "deny",
+          "compare_at_price": null,
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "created_at": "2020-12-01T21:14:23-08:00",
+          "updated_at": "2020-12-01T21:14:40-08:00",
+          "taxable": true,
+          "barcode": "",
+          "grams": 0,
+          "image_id": null,
+          "weight": 0.0,
+          "weight_unit": "kg",
+          "inventory_item_id": 39115402182822,
+          "inventory_quantity": 1000,
+          "old_inventory_quantity": 1000,
+          "requires_shipping": true,
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductVariant\/37208921342118"
+        }
+      ],
+      "options": [
+        {
+          "id": 7614062198950,
+          "product_id": 5982005821606,
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": 21801461121190,
+          "product_id": 5982005821606,
+          "position": 1,
+          "created_at": "2020-12-01T21:14:39-08:00",
+          "updated_at": "2020-12-01T21:14:39-08:00",
+          "alt": null,
+          "width": 497,
+          "height": 497,
+          "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/B3124.png?v=1606886079",
+          "variant_ids": [],
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801461121190"
+        }
+      ],
+      "image": {
+        "id": 21801461121190,
+        "product_id": 5982005821606,
+        "position": 1,
+        "created_at": "2020-12-01T21:14:39-08:00",
+        "updated_at": "2020-12-01T21:14:39-08:00",
+        "alt": null,
+        "width": 497,
+        "height": 497,
+        "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/B3124.png?v=1606886079",
+        "variant_ids": [],
+        "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801461121190"
+      }
+    },
+    {
+      "id": 5982003003558,
+      "title": "Steakhouse Sirloin Steak Sandwich",
+      "body_html": "\u003cmeta charset=\"utf-8\"\u003e\u003cspan data-mce-fragment=\"1\"\u003e436 Calories, 39g Protein, 52g Carbs, 8g Fats\u003c\/span\u003e",
+      "vendor": "FreshMeal_Interview_Org",
+      "product_type": "",
+      "created_at": "2020-12-01T21:11:51-08:00",
+      "handle": "steakhouse-sirloin-steak-sandwich",
+      "updated_at": "2020-12-21T01:06:36-08:00",
+      "published_at": "2020-12-01T21:11:57-08:00",
+      "template_suffix": "",
+      "status": "active",
+      "published_scope": "web",
+      "tags": "",
+      "admin_graphql_api_id": "gid:\/\/shopify\/Product\/5982003003558",
+      "variants": [
+        {
+          "id": 37208911872166,
+          "product_id": 5982003003558,
+          "title": "Default Title",
+          "price": "10.00",
+          "sku": "",
+          "position": 1,
+          "inventory_policy": "deny",
+          "compare_at_price": null,
+          "fulfillment_service": "manual",
+          "inventory_management": "shopify",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "created_at": "2020-12-01T21:11:51-08:00",
+          "updated_at": "2020-12-01T21:11:57-08:00",
+          "taxable": true,
+          "barcode": "",
+          "grams": 0,
+          "image_id": null,
+          "weight": 0.0,
+          "weight_unit": "kg",
+          "inventory_item_id": 39115392680102,
+          "inventory_quantity": 1000,
+          "old_inventory_quantity": 1000,
+          "requires_shipping": true,
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductVariant\/37208911872166"
+        }
+      ],
+      "options": [
+        {
+          "id": 7614058463398,
+          "product_id": 5982003003558,
+          "name": "Title",
+          "position": 1,
+          "values": [
+            "Default Title"
+          ]
+        }
+      ],
+      "images": [
+        {
+          "id": 21801436151974,
+          "product_id": 5982003003558,
+          "position": 1,
+          "created_at": "2020-12-01T21:11:54-08:00",
+          "updated_at": "2020-12-01T21:11:54-08:00",
+          "alt": null,
+          "width": 497,
+          "height": 497,
+          "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/M8603.png?v=1606885914",
+          "variant_ids": [],
+          "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801436151974"
+        }
+      ],
+      "image": {
+        "id": 21801436151974,
+        "product_id": 5982003003558,
+        "position": 1,
+        "created_at": "2020-12-01T21:11:54-08:00",
+        "updated_at": "2020-12-01T21:11:54-08:00",
+        "alt": null,
+        "width": 497,
+        "height": 497,
+        "src": "https:\/\/cdn.shopify.com\/s\/files\/1\/0509\/5040\/6310\/products\/M8603.png?v=1606885914",
+        "variant_ids": [],
+        "admin_graphql_api_id": "gid:\/\/shopify\/ProductImage\/21801436151974"
+      }
+    }
+  ]
+}

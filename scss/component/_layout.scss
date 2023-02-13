@@ -1,4 +1,4 @@
-.content-section {
+.main-container {
   display: flex;
 
   .section-left {
@@ -7,5 +7,9 @@
 
   .section-right {
     flex: 0 0 40%;
+  }
+
+  img {
+    max-width: 100%;
   }
 }

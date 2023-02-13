@@ -1,0 +1,47 @@
+@mixin button($bg-color: $brand-primary, $bg-color-hover: $brand-primary-dark, $color: $white) {
+  background-color: $bg-color;
+  border-radius: px-to-rem(30);
+  color: $color;
+  font-weight: $bold;
+  font-size: px-to-rem(14);
+  padding: px-to-rem(16) px-to-rem(20);
+  margin-bottom: px-to-rem(16);
+  transition: all .3s;
+  cursor: pointer;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-color-hover;
+  }
+}
+
+@mixin button-ghost {
+  @include button($bg-color: $white, $bg-color-hover: $white, $color: $brand-primary);
+  border: 2px solid $brand-primary;
+}
+
+@mixin button-link() {
+  @include button-ghost();
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.button {
+  @include button();
+}
+
+.disabled {
+  background-color: $grey;
+  color: $white;
+  cursor: not-allowed;
+  transition: none;
+
+  &:hover,
+  &:focus {
+    background-color: $grey;
+    color: $white;
+  }
+}

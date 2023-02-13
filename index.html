@@ -1,53 +1,40 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <title>Fresh Meal Plan: Healthy Prepared Meals Delivered to Your Door</title>
-    <meta name="description"
-          content="Looking for healthy vegan and vegetarian meal delivery in your area? Fresh meals offers prepared, plant based meals delivered to your door. Arrive frozen ready to heat and eat. Check availability here to see if we deliver to your zip code.">
+    <meta name="description" content="Looking for healthy vegan and vegetarian meal delivery in your area? Fresh meals offers prepared, plant based meals delivered to your door. Arrive frozen ready to heat and eat. Check availability here to see if we deliver to your zip code.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/dist/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
-<body>
-<!--Header-->
-<div id="header"></div>
-
-<!--Content-->
-<main class="content-section">
-    <div class="section-left">
-        <img src="/images/get-started-hero.jpg" alt="Chicken on salad and various dishes available from Fresh meals on plates">
+<body class="get-started-page">
+<main class="main-container">
+    <h1 class="invisible screen-reader" aria-hidden="true">Sign up for Fresh Meals</h1>
+    <div class="section-left background-image">
+        <p class="invisible screen-reader">Chicken on salad and various dishes available from Fresh meals cooked.</p>
     </div>
-    <div class="section-right">
+    <div class="section-right content-section">
         <h2>Get Started!</h2>
-        <p>Enter your information below, so we can show you the yummy recipes available in your area!</p>
-
-        <form action="#" class="get-started-form">
+        <p class="subheading-text">Enter your information below, so we can show you the yummy recipes available in your area!</p>
+        <form action="meal-selection.html" id="get-started-form" class="get-started-form" method="post">
             <div class="form-field">
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="email">
+                <label for="email">Email Address *</label>
+                <input type="email" name="email" id="email" placeholder="Email" required="required">
             </div>
             <div class="form-field">
-                <label for="zip-code">Zip Code</label>
-                <input type="text" name="zip-code" id="zip-code" pattern="[0-9]{5}" title="Please enter a five digit zip code i.e. 00000">
+                <label for="zipcode">Zip Code *</label>
+                <input type="text" name="zipcode" id="zipcode" placeholder="Zip Code" required="required">
             </div>
-            <button id="submit" type="submit" class="primary-button">Receive Meals Now</button>
-            <div class="privacy-information">
-                <p>By clicking Get Started you agree to receive marketing emails and to Our <a
-                        href="https://freshmealplan.com/policies/terms-of-service" target="_blank">Terms</a> and <a
-                        href="https://freshmealplan.com/policies/privacy-policy" target="_blank">Privacy Policy</a></p>
-            </div>
+            <button id="submit" type="submit" class="button" value="Get Started">Get Started</button>
+            <p class="privacy-information">By clicking Get Started you agree to receive marketing emails and to Our <a href="https://freshmealplan.com/policies/terms-of-service" target="_blank">Terms</a> and <a href="https://freshmealplan.com/policies/privacy-policy" target="_blank">Privacy Policy</a></p>
         </form>
     </div>
 </main>
-
-<!--Footer-->
-<div id="footer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
 <script src="js/main.js"></script>
 </body>
